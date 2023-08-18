@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>RTX-STORE</title>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html">
+        <h1 class="logo">RTX-SHOP</h1>
+      </a>
+
+        <button class="button-style" id="openCartBtn"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#8c32fb}</style><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"/></svg></button>
+
+    </div>
+  </nav>
+  
+  <!-- slid-show -->
+  <div style="border-radius: 20px;" class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item"><img src="1.jpg.jpg" alt="Slide 1"></div>
+      <div class="carousel-item"><img src="2.jpg.jpg" alt="Slide 2"></div>
+      <div class="carousel-item"><img src="3.jpg" alt="Slide 3"></div>
+      <div class="carousel-item"><img src="4.jpg" alt="Slide 4"></div>
+    </div>
+  </div>
+  <div class="l-r-button">
+    <div>
+      <button class="l-r-buttonstyle" id="prevBtn"><<</button>
+      <button class="l-r-buttonstyle" id="nextBtn">>></button>
+    </div>
+  </div>
+
+  <main class="container">
+      <div style="border-radius: 10px;" class="product">
+          <img class="product-img" src="1.jpg.jpg" alt="Product 1">
+          <div class="detail-section">
+              <div class="detail">
+                  <p style="font-size: 1.7vw; font-weight: bold;">RTX 3060ti</p>
+                  <p stlye="font-size: 1vw;">599  US</p>
+              </div>
+              <div class="button-to-cart">
+                  <button class="add-to-cart" data-product="product1">Add to Cart</button>
+              </div>
+          </div>
+      </div>
+      <div style="border-radius: 10px;" class="product">
+          <img class="product-img" src="2.jpg.jpg" alt="Product2">
+          <div class="detail-section">
+              <div class="detail">
+                  <p style="font-size: 1.7vw; font-weight: bold;">RTX4070</p>
+                  <p stlye="font-size: 1vw;">499  US</p>
+              </div>
+              <div class="button-to-cart">
+                  <button class="add-to-cart" data-product="product2">Add to Cart</button>
+              </div>
+          </div>
+      </div>
+      <div style="border-radius: 10px;" class="product">
+          <img class="product-img" src="3.jpg" alt="Product3">
+          <div class="detail-section">
+              <div class="detail">
+                  <p style="font-size: 1.7vw; font-weight: bold;">RTX3090</p>
+                  <p stlye="font-size: 1vw;">529  US</p>
+              </div>
+              <div class="button-to-cart">
+                  <button class="add-to-cart" data-product="product3">Add to Cart</button>
+              </div>
+          </div>
+      </div>
+      <div style="border-radius: 10px;" class="product">
+          <img class="product-img" src="4.jpg" alt="Product4">
+          <div class="detail-section">
+              <div class="detail">
+                  <p style="font-size: 1.7vw; font-weight: bold;">RTX4090</p>
+                  <p stlye="font-size: 1vw;">779  UD</p>
+              </div>
+              <div class="button-to-cart">
+                  <button class="add-to-cart" data-product="product4">Add to Cart</button>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="product-items">
+        <img class="product-img" src="1.jpg.jpg" alt="">
+        <div class="detail-section">
+          <div>
+              <p style="font-size: 1.2vw;">Product name</p>
+              <p stlye="font-size: 1vw;">500 THB</p>
+          </div>
+          <div class="amout-product">
+              <span style="font-size: 40px;  height: 100%; color: rgb(216, 6, 6);">&#8722;</span>
+              <span style="font-size: 30px; background: rgb(255, 255, 255); text-align: center; width: 35px; border: 1px solid rgb(184, 2, 2); border-radius: 20%;" >0</span>
+              <span style="font-size: 40px;  height: 100%; color: rgb(6, 141, 6);">&#43;</span>
+          </div>
+        </div>
+        
+      </div>
+
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>$15.00</p>
+      <button class="add-to-cart" data-product="product2">Add to Cart</button>
+    </div> -->
+
+  </main>
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p>Total: $<span id="cartTotal">0.00</span></p>
+      <form class="customer_form" action="">
+        <label for="">ชื่อ</label>
+        <input type="text">
+        <label for="">นามสกุล</label>
+        <input type="text">
+        <label for="">ที่อยู่</label>
+        <input type="text">
+        <label for="">เบอร์โทรศัพท์</label>
+        <input type="number">
+        <label for="">Email</label>
+        <input type="text">
+        <label for="">บัตรเครดิต</label>
+        <input type="text">
+        <label for="">CVC</label>
+        <input type="number">
+        <label for="">ex-date</label>
+        <input type="date">
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
